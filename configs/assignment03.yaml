@@ -1,0 +1,35 @@
+project:
+  name: "CV Assignment 03 - ResNet-style PatchCore baseline"
+  output_dir: "outputs"
+
+cases:
+  case2:
+    title: "Case 2 - round cap inspection"
+    video: "data/case2.mp4"  # TODO: Update with your video path
+    train_range_sec: [0, 120]
+    test_range_sec: [350, 390]
+    roi: [650, 260, 420, 420]
+    train_stride: 45
+    test_stride: 10
+    demo_normal_sec: [70, 75]
+    demo_defect_sec: [382, 392]
+    threshold_quantile: 0.900
+  case4:
+    title: "Case 4 - four small-cap inspection"
+    video: "data/case4.mp4"  # TODO: Update with your video path
+    train_range_sec: [0, 180]
+    test_range_sec: [250, 290]
+    roi: [760, 210, 430, 650]
+    train_stride: 55
+    test_stride: 10
+    demo_normal_sec: [70, 75]
+    demo_defect_sec: [270, 280]
+    threshold_quantile: 0.900
+
+patchcore:
+  resize: [160, 160]
+  grid: [8, 8]
+  coreset_limit: 2200
+  knn_k: 3
+  vote_window: 5
+  min_ng_votes: 2

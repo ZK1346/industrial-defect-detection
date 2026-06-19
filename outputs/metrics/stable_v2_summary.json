@@ -1,0 +1,17 @@
+{
+  "case2": {
+    "video": "outputs/videos_stable_v2/case2_round_cap_stable_v2.mp4",
+    "frames": 225,
+    "fps_estimate": 12.387883119715383,
+    "ok_frames": 75,
+    "ng_frames": 150
+  },
+  "case4": {
+    "video": "outputs/videos_stable_v2/case4_four_small_caps_stable_v2.mp4",
+    "frames": 225,
+    "fps_estimate": 10.351655728698134,
+    "ok_frames": 120,
+    "ng_frames": 105
+  },
+  "average_fps_estimate": 11.369769424206758
+}
