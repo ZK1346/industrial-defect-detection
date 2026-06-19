@@ -4,31 +4,9 @@ __pycache__/
 *$py.class
 *.so
 .Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# Virtual Environment
 venv/
 env/
 ENV/
-env.bak/
-venv.bak/
 
 # IDE
 .vscode/
@@ -38,38 +16,24 @@ venv.bak/
 *~
 .DS_Store
 
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# Environment variables
-.env
-.env.local
-
-# Data files (large video files should not be committed)
+# Data files (large video files)
 data/*.mp4
 data/*.avi
 data/*.mov
 data/*.mkv
 
-# Output files (generated during runtime)
-outputs/videos/*.mp4
-outputs/videos_stable_v2/*.mp4
-outputs/frames/*.jpg
-outputs/frames_stable_v2/*.jpg
-outputs/metrics/*.csv
-outputs/metrics/*.png
-outputs/metrics_stable_v2/*.csv
-outputs/metrics_stable_v2/*.png
-outputs/models/*.npy
-
-# Keep these output structure directories but ignore their content
-outputs/videos/.gitkeep
-outputs/videos_stable_v2/.gitkeep
-outputs/frames/.gitkeep
-outputs/frames_stable_v2/.gitkeep
-outputs/metrics/.gitkeep
-outputs/metrics_stable_v2/.gitkeep
-outputs/models/.gitkeep
+# Generated output files (keep directory structure but ignore content)
+outputs/videos/*
+!outputs/videos/.gitkeep
+outputs/frames/*
+!outputs/frames/.gitkeep
+outputs/metrics/*
+!outputs/metrics/stable_v2_summary.json
+outputs/models/*
+!outputs/models/.gitkeep
+outputs/videos_stable_v2/
+outputs/frames_stable_v2/
+outputs/metrics_stable_v2/
 
 # Logs
 *.log
@@ -79,18 +43,3 @@ logs/
 *.tmp
 temp/
 tmp/
-
-# Testing
-.pytest_cache/
-.coverage
-htmlcov/
-.tox/
-.nox/
-
-# mypy
-.mypy_cache/
-.dmypy.json
-
-# OS specific
-Thumbs.db
-ehthumbs.db
